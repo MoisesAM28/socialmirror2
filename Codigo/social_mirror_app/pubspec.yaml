@@ -1,0 +1,42 @@
+name: social_mirror_app
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.4
+
+dependencies:
+  flutter:
+    sdk: flutter
+  image_picker: ^1.0.7
+  speech_to_text: ^7.3.0
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  flutter_native_splash: ^2.4.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/logo.png
+
+# 🔥 SPLASH CONFIG
+flutter_native_splash:
+  color: "#667eea"
+  color_dark: "#764ba2"
+
+  android: true
+  ios: true
+
+  image: assets/logo.png
+
+  android_gravity: center
+  ios_content_mode: center
+
+  fullscreen: true
